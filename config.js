@@ -84,3 +84,4 @@ export const portfolioData = [
     liveUrl: ''
   },
 ];
+portfolioData.sort((a, b) => b.id - a.id);
