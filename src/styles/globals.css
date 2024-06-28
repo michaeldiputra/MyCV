@@ -6,8 +6,26 @@
 
 body{
   font-family: 'poppins', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background: url(../../public/background.webp);
-  background-size: cover;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(38 38 38);
+  border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(96 165 250);
+  border-radius: 5px
+}
+
+::-webkit-scrollbar-button {
+  width: 20px
 }
 
 .wave {

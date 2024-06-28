@@ -29,14 +29,14 @@ export default function Home() {
       <div className="flex flex-row justify-between items-center h-[65vh] mt-8 px-44">
         <div>
           <p className="text-blue-400">Hello World, I'm</p>
-          <h1 className="text-5xl font-semibold">Michael Ray</h1>
-          <div className="text-2xl">
-            <span class="auto-type"></span>
+          <h1 className="text-5xl font-semibold mt-3">Michael Ray</h1>
+          <div className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-400 mt-3 mb-2">
+            <span className="auto-type wrap"></span>
           </div>
           <p>Welcome to My personal website.<span className="wave">👋🏼</span></p>
         </div>
         <div className="mr-20 w-fit">
-          <img src="home/me.jpg" className="w- rounded-full"></img>
+          <img src="me.jpg" className="w-96 rounded-full border-8 border-blue-400 shadow-[0_0_60px_-7px] shadow-blue-400"></img>
         </div>
       </div>
     </div>
