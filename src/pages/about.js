@@ -3,8 +3,9 @@ import { myTitle } from "../../config";
 import { useState } from 'react';
 import { techstackData } from "../../config";
 import { toolsData } from "../../config";
+import Link from 'next/link';
 
-export default function about() {
+export default function About() {
   const [activeTab, setActiveTab] = useState('techStack');
   return (
     <div>
@@ -21,7 +22,7 @@ export default function about() {
           </div>
           <div className="flex mt-6 justify-between md:flex-row flex-col items-center">
             <div>
-              <img src="me.jpg" className="rounded-full xl:w-96 lg:w-80 mx-11 md:w-72 w-96"></img>
+              <img src="me.jpg" alt="me" className="rounded-full xl:w-96 lg:w-80 mx-11 md:w-72 w-96"></img>
             </div>
             <div className="md:w-7/12 w-full lg:text-lg text-md flex justify-evenly flex-col font-light text-justify md:pl-3">
               <p className="md:pt-2 pt-10">&nbsp; &nbsp; &nbsp; Hi everyone! My name is Michael Ray Diputra. I'm a web developer from Badung, Bali. I have 1 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
@@ -32,21 +33,21 @@ export default function about() {
         <div className="bg-neutral-800/60 mt-4 rounded-2xl border-2 border-neutral-700 flex w-full justify-around flex-col h-48 px-7 py-4 md:p-7 md:h-max md:flex-row lg:justify-normal">
           <div className="flex flex-col justify-between items-left h-16 lg:w-full lg:justify-around lg:h-auto lg:flex-row">
             <div className="flex">
-              <a href="mailto:michaeldiputra257@gmail.com" target="_blank"><img src="about/email.png" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></a>
+              <Link href="mailto:michaeldiputra257@gmail.com" target="_blank"><img src="about/email.png" alt="email" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></Link>
               <p>michaeldiputra257@gmail.com</p>
             </div>
             <div className="flex">
-              <a href="https://www.linkedin.com/in/michaeldiputra/" target="_blank"><img src="about/linkedin.png" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></a>
+              <Link href="https://www.linkedin.com/in/michaeldiputra/" target="_blank"><img alt="linkedin" src="about/linkedin.png" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></Link>
               <p>michaeldiputra</p>
             </div>
           </div>
           <div className="flex flex-col justify-between items-left h-16 lg:w-full lg:justify-around lg:h-auto lg:flex-row">
             <div className="flex">
-              <a href="https://g.co/kgs/3BHdmPa" target="_blank"><img src="about/home.png" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></a>
+              <Link href="https://g.co/kgs/3BHdmPa" target="_blank"><img src="about/home.png" alt="address" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></Link>
               <p>Canggu, Bali, Indonesia</p>
             </div>
             <div className="flex">
-              <a href="https://instagram.com/michael_257raydi" target="_blank"><img src="about/instagram.png" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></a>
+              <Link href="https://instagram.com/michael_257raydi" target="_blank"><img src="about/instagram.png" alt="instagram" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></img></Link>
               <p>michael_257raydi</p>
             </div>
           </div>
@@ -75,7 +76,7 @@ export default function about() {
             <div className="grid pb-32 grid-cols-2 gap-5 md:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
               {techstackData.map(techstack => (
                 <div key={techstack.id} className="p-5 border-[1px] border-blue-400 rounded h-20 items-center flex group hover:bg-blue-400/10 transition w-full xl:w-64">
-                  <img src={techstack.imageUrl} className="w-10 group-hover:scale-125 transition"></img>
+                  <img src={techstack.imageUrl} alt={techstack.title} className="w-10 group-hover:scale-125 transition"></img>
                   <div className="pl-5">
                     <h3 className="text-lg font-medium translate-y-2 group-hover:translate-y-0 transition">{techstack.title}</h3>
                     <p className="text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{techstack.level}</p>
@@ -88,7 +89,7 @@ export default function about() {
               <div className="grid pb-32 grid-cols-2 gap-5 lg:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
               {toolsData.map(tools => (
                 <div key={tools.id} className="p-5 border-[1px] border-blue-400 rounded h-20 items-center flex group hover:bg-blue-400/10 transition w-full xl:w-64">
-                  <img src={tools.imageUrl} className="w-10 group-hover:scale-125 transition"></img>
+                  <img src={tools.imageUrl} alt={tools.title} className="w-10 group-hover:scale-125 transition"></img>
                   <div className="pl-5">
                     <h3 className="text-lg font-medium translate-y-2 group-hover:translate-y-0 transition">{tools.title}</h3>
                     <p className="text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{tools.for}</p>
