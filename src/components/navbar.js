@@ -1,6 +1,7 @@
 import { myTitle } from "../../config";
 import { useRouter } from "next/router";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const router = useRouter();
@@ -14,7 +15,7 @@ export default function Navbar() {
         <Link href="/portfolio" className={`${isActive('/portfolio')} mx-3 transition ease-out`}>Portfolio</Link>
       </div>
       <Link href="https://github.com/michaeldiputra/" target="_blank">
-        <img src="github.svg" alt="github" className="w-9"></img>
+        <Image src="github.svg" alt="github" className="w-9"></Image>
       </Link>
     </nav>
   );

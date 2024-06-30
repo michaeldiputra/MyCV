@@ -1,6 +1,7 @@
 import Head from "next/head";
 import {myTitle} from "../../config"
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   useEffect(() => {
@@ -34,12 +35,12 @@ export default function Home() {
           </div>
           <p>Welcome to My personal website.<span className="wave">👋🏼</span></p>
           <Link href="cv.pdf" target="_blank" class="flex items-center py-3 px-4 mt-3 text-sm font-medium rounded-lg border transition duration-300 text-blue-400 border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 w-fit opacity-0 hover:opacity-100">
-            <img src="cv.svg" alt="cv" className="w-5 mr-2 text-blue-400 fill-blue-400"></img>
+            <Image src="cv.svg" alt="cv" className="w-5 mr-2 text-blue-400 fill-blue-400"></Image>
             View CV
           </Link>
         </div>
         <div className="xl:mr-20 w-fit">
-          <img src="me.jpg" alt="me" className="w-96 rounded-full md:border-8 border-[6px] md:border-blue-400 border-blue-400 md:shadow-blue-400 shadow-blue-400 md:shadow-[0_0_60px_-7px] shadow-[0_0_35px_-7px] "></img>
+          <Image src="me.jpg" alt="me" className="w-96 rounded-full md:border-8 border-[6px] md:border-blue-400 border-blue-400 md:shadow-blue-400 shadow-blue-400 md:shadow-[0_0_60px_-7px] shadow-[0_0_35px_-7px] "></Image>
         </div>
       </div>
     </div>

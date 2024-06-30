@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { myTitle } from "../../config";
 import { portfolioData } from '../../config';
+import Image from 'next/image';
 
 export default function Portfolio() {
   return (
@@ -19,7 +20,7 @@ export default function Portfolio() {
           {portfolioData.map(item => (
             <div key={item.id} className="p-5 w-full bg-neutral-800/60 rounded-xl border-2 border-neutral-700 flex flex-col justify-between transition-all hover:-translate-y-2">
               <div>
-                <img src={item.imageUrl} alt={item.title} className="w-full rounded-xl"></img>
+                <Image src={item.imageUrl} alt={item.title} className="w-full rounded-xl"></Image>
                 <div>
                   <h4 className="text-center font-semibold mt-4 text-xl">{item.title}</h4>
                   <p className="text-neutral-400 text-sm mt-3">{item.description}</p>
@@ -31,12 +32,12 @@ export default function Portfolio() {
                   <div className="flex justify-end mt-2 pr-1">
                     {item.githubUrl && (
                       <Link href={item.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <img src="portfolio/github.svg" alt="github" className="invert hover:-translate-y-0 translate-y-0.5 cursor-pointer transition duration-300"></img>
+                        <Image src="portfolio/github.svg" alt="github" className="invert hover:-translate-y-0 translate-y-0.5 cursor-pointer transition duration-300"></Image>
                       </Link>
                     )}
                     {item.liveUrl && (
                       <Link href={item.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <img src="portfolio/out.png" alt="view page" className="invert w-5 hover:-translate-y-0.5 cursor-pointer transition duration-300 ml-2"></img>
+                        <Image src="portfolio/out.png" alt="view page" className="invert w-5 hover:-translate-y-0.5 cursor-pointer transition duration-300 ml-2"></Image>
                       </Link>
                     )}
                   </div>
