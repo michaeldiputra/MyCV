@@ -2,6 +2,7 @@ import Head from "next/head";
 import { myTitle } from "../../config";
 import { portfolioData } from '../../config';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Portfolio() {
   return (

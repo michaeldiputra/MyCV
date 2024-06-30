@@ -1,4 +1,3 @@
-import { myTitle } from "../../config";
 import { useRouter } from "next/router";
 import Link from 'next/link';
 
