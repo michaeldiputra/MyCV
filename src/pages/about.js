@@ -26,7 +26,7 @@ export default function About() {
               <Image src="me.jpg" alt="me" className="rounded-full xl:w-96 lg:w-80 mx-11 md:w-72 w-96"></Image>
             </div>
             <div className="md:w-7/12 w-full lg:text-lg text-md flex justify-evenly flex-col font-light text-justify md:pl-3">
-              <p className="md:pt-2 pt-10 indent-8">Hi everyone! My name is Michael Ray Diputra. I'm a web developer from Badung, Bali. I have 1 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
+              <p className="md:pt-2 pt-10 indent-8">Hi everyone! My name is Michael Ray Diputra. I&apos;m a web developer from Badung, Bali. I have 1 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
               <p className="lg:pb-12 md:pt-7 pt-3 indent-8">My job is to build your website to be functional and user-friendly yet still attractive. In addition, I provide a personal touch to your product and ensure that the website catches attention and is easy to use. My goal is to convey your message and identity in the most creative way. If you are interested in hiring me, please contact the listed contact.</p>
             </div>
           </div>

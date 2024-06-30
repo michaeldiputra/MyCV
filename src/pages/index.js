@@ -25,11 +25,11 @@ export default function Home() {
         <title>Home | {myTitle}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        {/* <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> */}
       </Head>
       <div className="flex md:flex-row justify-between items-center md:h-[65vh] mt-8 xl:px-44 lg:px-28 md:px-10 flex-col-reverse md:text-left text-center">
         <div>
-          <p className="text-blue-400 md:p-0 pt-7">Hello World, I'm</p>
+          <p className="text-blue-400 md:p-0 pt-7">Hello World, I&apos;m</p>
           <h1 className="md:text-5xl text-4xl font-semibold mt-3">Michael Ray</h1>
           <div className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-400 mt-3 mb-2">
             <span className="auto-type wrap"></span>

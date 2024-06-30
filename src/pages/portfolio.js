@@ -15,7 +15,7 @@ export default function Portfolio() {
       <div className="mt-10 px-6 items-center flex flex-col">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-2xl font-medium">Past Project Experience</h2>
-          <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-500 w-fit">Explore the projects I've worked on so far</p>
+          <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-500 w-fit">Explore the projects I&apos;ve worked on so far</p>
         </div>
         <div className="grid gap-7 pb-32 mt-11 w-fit grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {portfolioData.map(item => (
