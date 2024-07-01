@@ -35,9 +35,9 @@ export default function Home() {
             <span className="auto-type wrap"></span>
           </div>
           <p>Welcome to My personal website.<span className="wave">👋🏼</span></p>
-          <Link href="cv.pdf" target="_blank" className="flex items-center py-3 px-4 mt-3 text-sm font-medium rounded-lg border transition duration-300 text-blue-400 border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 w-fit opacity-0 hover:opacity-100">
+          <Link href="cv.pdf" download={"MichaelDiputra-CV.pdf"} target="_blank" className="flex items-center py-3 px-4 mt-3 text-sm font-medium rounded-lg border transition duration-300 text-blue-400 border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 w-fit opacity-0 hover:opacity-100">
             <Image src="cv.svg" alt="cv" width={1000} height={1000} className="w-5 mr-2 text-blue-400 fill-blue-400"></Image>
-            View CV
+            Download CV
           </Link>
         </div>
         <div className="xl:mr-20 w-fit">
