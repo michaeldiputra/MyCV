@@ -23,9 +23,9 @@ export default function About() {
           </div>
           <div className="flex mt-6 justify-between md:flex-row flex-col items-center">
             <div>
-              <Image src="me.jpg" alt="me" className="rounded-full xl:w-96 lg:w-80 mx-11 md:w-72 w-96"></Image>
+              <Image src="/me.jpg" alt="me" width={1000} height={1000} className="rounded-full lg:w-80 w-60 mx-3 md:mx-11 md:w-72 xl:w-96"></Image>
             </div>
-            <div className="md:w-7/12 w-full lg:text-lg text-md flex justify-evenly flex-col font-light text-justify md:pl-3">
+            <div className="text-sm flex justify-evenly flex-col text-justify md:pl-3 md:w-7/12 w-full lg:text-lg lg:font-light ">
               <p className="md:pt-2 pt-10 indent-8">Hi everyone! My name is Michael Ray Diputra. I&apos;m a web developer from Badung, Bali. I have 1 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
               <p className="lg:pb-12 md:pt-7 pt-3 indent-8">My job is to build your website to be functional and user-friendly yet still attractive. In addition, I provide a personal touch to your product and ensure that the website catches attention and is easy to use. My goal is to convey your message and identity in the most creative way. If you are interested in hiring me, please contact the listed contact.</p>
             </div>
@@ -34,21 +34,21 @@ export default function About() {
         <div className="bg-neutral-800/60 mt-4 rounded-2xl border-2 border-neutral-700 flex w-full justify-around flex-col h-48 px-7 py-4 md:p-7 md:h-max md:flex-row lg:justify-normal">
           <div className="flex flex-col justify-between items-left h-16 lg:w-full lg:justify-around lg:h-auto lg:flex-row">
             <div className="flex">
-              <Link href="mailto:michaeldiputra257@gmail.com" target="_blank"><Image src="about/email.png" alt="email" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
+              <Link href="mailto:michaeldiputra257@gmail.com" target="_blank"><Image src="/about/email.png" alt="email" width={1000} height={1000} className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
               <p>michaeldiputra257@gmail.com</p>
             </div>
             <div className="flex">
-              <Link href="https://www.linkedin.com/in/michaeldiputra/" target="_blank"><Image alt="linkedin" src="about/linkedin.png" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
+              <Link href="https://www.linkedin.com/in/michaeldiputra/" target="_blank"><Image alt="linkedin" src="/about/linkedin.png" width={1000} height={1000} className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
               <p>michaeldiputra</p>
             </div>
           </div>
           <div className="flex flex-col justify-between items-left h-16 lg:w-full lg:justify-around lg:h-auto lg:flex-row">
             <div className="flex">
-              <Link href="https://g.co/kgs/3BHdmPa" target="_blank"><Image src="about/home.png" alt="address" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
+              <Link href="https://g.co/kgs/3BHdmPa" target="_blank"><Image src="/about/home.png" alt="address" width={1000} height={1000} className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
               <p>Canggu, Bali, Indonesia</p>
             </div>
             <div className="flex">
-              <Link href="https://instagram.com/michael_257raydi" target="_blank"><Image src="about/instagram.png" alt="instagram" className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
+              <Link href="https://instagram.com/michael_257raydi" target="_blank"><Image src="/about/instagram.png" alt="instagram" width={1000} height={1000} className="w-9 h-fit invert pr-3 hover:-translate-y-0.5 transition items-center"></Image></Link>
               <p>michael_257raydi</p>
             </div>
           </div>
@@ -76,10 +76,10 @@ export default function About() {
             {activeTab === 'techStack' && (
             <div className="grid pb-32 grid-cols-2 gap-5 md:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
               {techstackData.map(techstack => (
-                <div key={techstack.id} className="p-5 border-[1px] border-blue-400 rounded h-20 items-center flex group hover:bg-blue-400/10 transition w-full xl:w-64">
-                  <Image src={techstack.imageUrl} alt={techstack.title} className="w-10 group-hover:scale-125 transition"></Image>
+                <div key={techstack.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
+                  <Image src={techstack.imageUrl} alt={techstack.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10"></Image>
                   <div className="pl-5">
-                    <h3 className="text-lg font-medium translate-y-2 group-hover:translate-y-0 transition">{techstack.title}</h3>
+                    <h3 className="font-medium translate-y-2 group-hover:translate-y-0 transition text-base md:text-lg">{techstack.title}</h3>
                     <p className="text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{techstack.level}</p>
                   </div>
                 </div>
@@ -89,11 +89,11 @@ export default function About() {
             {activeTab === 'tools' && (
               <div className="grid pb-32 grid-cols-2 gap-5 lg:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
               {toolsData.map(tools => (
-                <div key={tools.id} className="p-5 border-[1px] border-blue-400 rounded h-20 items-center flex group hover:bg-blue-400/10 transition w-full xl:w-64">
-                  <Image src={tools.imageUrl} alt={tools.title} className="w-10 group-hover:scale-125 transition"></Image>
-                  <div className="pl-5">
-                    <h3 className="text-lg font-medium translate-y-2 group-hover:translate-y-0 transition">{tools.title}</h3>
-                    <p className="text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{tools.for}</p>
+                <div key={tools.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
+                  <Image src={tools.imageUrl} alt={tools.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10"></Image>
+                  <div className="pl-5 text-left">
+                    <h3 className="font-medium translate-y-2 group-hover:translate-y-0 transition text-base md:text-lg">{tools.title}</h3>
+                    <p className="text-left text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{tools.for}</p>
                   </div>
                 </div>
               ))}

@@ -15,7 +15,7 @@ export default function Navbar() {
         <Link href="/portfolio" className={`${isActive('/portfolio')} mx-3 transition ease-out`}>Portfolio</Link>
       </div>
       <Link href="https://github.com/michaeldiputra/" target="_blank">
-        <Image src="github.svg" alt="github" className="w-9"></Image>
+        <Image src="github.svg" alt="github" className="w-9" width={1000} height={1000}></Image>
       </Link>
     </nav>
   );

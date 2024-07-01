@@ -37,6 +37,21 @@ body{
   display: inline-block;
 }
 
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; /* mulai di luar layar */
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-160%);
+  }
+}
+
 @keyframes wave-animation {
   0% {
       transform: rotate(0deg);
