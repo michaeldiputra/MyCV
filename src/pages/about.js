@@ -78,9 +78,9 @@ export default function About() {
               {techstackData.map(techstack => (
                 <div key={techstack.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
                   <Image src={techstack.imageUrl} alt={techstack.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10"></Image>
-                  <div className="pl-5">
+                  <div className="pl-5 text-left overflow-hidden">
                     <h3 className="font-medium translate-y-2 group-hover:translate-y-0 transition text-base md:text-lg">{techstack.title}</h3>
-                    <p className="text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{techstack.level}</p>
+                    <p className="text-left text-blue-400 opacity-0 transition w-full text-xs truncate group-hover:opacity-100 md:text-sm">{techstack.level}</p>
                   </div>
                 </div>
               ))}
@@ -91,9 +91,9 @@ export default function About() {
               {toolsData.map(tools => (
                 <div key={tools.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
                   <Image src={tools.imageUrl} alt={tools.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10"></Image>
-                  <div className="pl-5 text-left">
+                  <div className="pl-5 text-left overflow-hidden">
                     <h3 className="font-medium translate-y-2 group-hover:translate-y-0 transition text-base md:text-lg">{tools.title}</h3>
-                    <p className="text-left text-blue-400 opacity-0 group-hover:opacity-100 transition w-full text-nowrap text-xs md:text-sm">{tools.for}</p>
+                    <p className="text-left text-blue-400 opacity-0 transition w-full text-xs truncate group-hover:opacity-100 md:text-sm">{tools.for}</p>
                   </div>
                 </div>
               ))}
