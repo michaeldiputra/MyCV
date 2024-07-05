@@ -28,7 +28,7 @@ export default function Home() {
         {/* <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> */}
       </Head>
       <div className="flex md:flex-row justify-between items-center md:h-[65vh] mt-8 xl:px-44 lg:px-28 md:px-10 flex-col-reverse md:text-left text-center">
-        <div>
+        <div className="flex items-center mb-32 flex-col md:justify-normal md:flex-none md:m-0">
           <p className="text-blue-400 md:p-0 pt-7">Hello World, I&apos;m</p>
           <h1 className="md:text-5xl text-4xl font-semibold mt-3">Michael Ray</h1>
           <div className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-400 mt-3 mb-2">
