@@ -3,13 +3,16 @@ export const blue = '#5F85DB';
 export const blueHover = '#bfd1fb';
 export const techstackData = [
   { id: 1, imageUrl: '/about/techstack/html.png', title: 'HTML', level: 'Advanced' },
-  { id: 2, imageUrl: '/about/techstack/css.png', title: 'CSS', level: 'Advvanced' },
+  { id: 2, imageUrl: '/about/techstack/css.png', title: 'CSS', level: 'Advanced' },
   { id: 3, imageUrl: '/about/techstack/bootstrap.png', title: 'Bootstrap', level: 'Advanced' },
   { id: 4, imageUrl: '/about/techstack/java.png', title: 'Java', level: 'Intermediate' },
   { id: 5, imageUrl: '/about/techstack/php.svg', title: 'PHP', level: 'Intermediate' },
   { id: 6, imageUrl: '/about/techstack/javascript.png', title: 'JavaScript', level: 'Intermediate' },
-  { id: 7, imageUrl: '/about/techstack/tailwind.svg', title: 'Tailwind', level: 'Intermediate' },
-  { id: 8, imageUrl: '/about/techstack/nextjs.svg', title: 'Next.js', level: 'Beginner' },
+  { id: 7, imageUrl: '/about/techstack/tailwind.svg', title: 'Tailwind', level: 'Advanced' },
+  { id: 8, imageUrl: '/about/techstack/nextjs.svg', title: 'Next.js', level: 'Intermediate' },
+  { id: 9, imageUrl: '/about/techstack/react.svg', title: 'React', level: 'Intermediate' },
+  { id: 10, imageUrl: '/about/techstack/laravel.svg', title: 'Laravel', level: 'Intermediate' },
+  { id: 11, imageUrl: '/about/techstack/typescript.svg', title: 'TypeScript', level: 'Beginner' },
 ];
 export const toolsData = [
   { id: 1, imageUrl: '/about/tools/git.png', title: 'Git', for: 'Source Control' },
@@ -18,7 +21,12 @@ export const toolsData = [
   { id: 4, imageUrl: '/about/tools/mysql.png', title: 'MySQL', for: 'Database' },
   { id: 5, imageUrl: '/about/tools/figma.png', title: 'Figma', for: 'Prototyping Design' },
   { id: 6, imageUrl: '/about/tools/vercel.svg', title: 'Vercel', for: 'Hosting' },
+  { id: 7, imageUrl: '/about/tools/gitea.svg', title: 'Gitea', for: 'Source Control' },
+  { id: 8, imageUrl: '/about/tools/nodejs.svg', title: 'Node.js', for: 'Runtime' },
+  { id: 9, imageUrl: '/about/tools/composer.png', title: 'Composer', for: 'PHP Packages' },
+  { id: 10, imageUrl: '/about/tools/android-studio.svg', title: 'Android IDE', for: 'App Dev' },
 ];
+
 export const portfolioData = [
   {
     id: 1,
