@@ -73,7 +73,7 @@ export default function About() {
           </div>
           <div>
             {activeTab === 'techStack' && (
-            <div className="grid pb-32 grid-cols-2 gap-5 md:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
+            <div className="grid pb-32 grid-cols-1 gap-5 md:gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"> 
               {techstackData.map(techstack => (
                 <div key={techstack.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
                   <Image src={techstack.imageUrl} alt={techstack.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10"></Image>
@@ -86,7 +86,7 @@ export default function About() {
             </div>
             )}
             {activeTab === 'tools' && (
-              <div className="grid pb-32 grid-cols-2 gap-5 lg:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
+              <div className="grid pb-32 grid-cols-1 gap-5 md:gap-10 sm:grid-cols-2 lg:gap-10 md:grid-cols-3 xl:grid-cols-4"> 
               {toolsData.map(tools => (
                 <div key={tools.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
                   <Image src={tools.imageUrl} alt={tools.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10"></Image>
