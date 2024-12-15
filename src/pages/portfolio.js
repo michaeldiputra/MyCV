@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { myTitle } from "../../config";
 import { portfolioData } from '../../config';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,7 +7,7 @@ export default function Portfolio() {
   return (
     <div>
       <Head>
-        <title>Portfolio | {myTitle}</title>
+        <title>Portfolio | michael.ray();</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

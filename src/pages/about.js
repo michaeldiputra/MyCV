@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { myTitle } from "../../config";
 import { useState } from 'react';
 import { techstackData } from "../../config";
 import { toolsData } from "../../config";
@@ -11,7 +10,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>About | {myTitle}</title>
+        <title>About | michael.ray();</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

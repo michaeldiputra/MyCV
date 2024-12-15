@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { myTitle } from "../../config"
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -22,7 +21,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Home | {myTitle}</title>
+        <title>Home | michael.ray();</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         {/* <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> */}
