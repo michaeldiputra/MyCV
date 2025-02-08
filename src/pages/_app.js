@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+        <meta name="google-site-verification" content="TqScQ-Tf6aP245TJCdkloiwWR-7eGqdidM8lP6VDpWU" />
         <meta name="description" content="Welcome to My personal website.👋🏼" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Profesional Portfolio | michael.ray();" />
