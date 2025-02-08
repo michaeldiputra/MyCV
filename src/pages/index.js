@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { baseUrl } from "../../config";
 
 export default function Home() {
   useEffect(() => {
@@ -24,7 +25,17 @@ export default function Home() {
         <title>Home | michael.ray();</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> */}
+        <title>Home | michael.ray();</title>
+        <meta name="description" content="Hello World, I'm Michael Ray — a student, newbie, and beginner web designer exploring front-end development. Welcome to my personal website!" />
+        <meta property="og:title" content="Home | michael.ray();" />
+        <meta property="og:description" content="Hello World, I'm Michael Ray — a student, newbie, and beginner web designer exploring front-end development." />
+        <meta property="og:image" content={`${baseUrl}/home-preview.jpg`} />
+        <meta property="og:url" content={baseUrl} />
+        <meta property="og:type" content="website" /> 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home | michael.ray();" />
+        <meta name="twitter:description" content="Hello World, I'm Michael Ray — a student, newbie, and beginner web designer exploring front-end development." />
+        <meta name="twitter:image" content={`${baseUrl}/home-preview.jpg`} />
       </Head>
       <div className="flex md:flex-row justify-between items-center md:h-[65vh] mt-8 xl:px-44 lg:px-28 md:px-10 flex-col-reverse md:text-left text-center">
         <div className="flex items-center mb-32 flex-col md:justify-normal md:flex-none md:m-0">

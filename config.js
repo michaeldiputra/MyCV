@@ -1,6 +1,10 @@
 export const myTitle = "michael.ray();";
 export const blue = '#5F85DB';
 export const blueHover = '#bfd1fb';
+export const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL ||
+  `https://${process.env.VERCEL_URL}` ||
+  "http://localhost:3000";
 export const techstackData = [
   { id: 1, imageUrl: '/about/techstack/html.png', title: 'HTML', level: 'Advanced' },
   { id: 2, imageUrl: '/about/techstack/css.png', title: 'CSS', level: 'Advanced' },
