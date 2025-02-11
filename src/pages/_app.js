@@ -14,10 +14,12 @@ export default function App({ Component, pageProps }) {
         <meta property="og:description" content="Welcome to My personal website.👋🏼" />
         <meta property="og:url" content={baseUrl} />
         <meta property="og:image" content={`${baseUrl}/default-image.jpg`} />
+        <meta property="og:site_name" content="Profesional Portfolio | michael.ray();" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Profesional Portfolio | michael.ray();" />
         <meta name="twitter:description" content="Welcome to My personal website.👋🏼" />
         <meta name="twitter:image" content={`${baseUrl}/default-image.jpg`} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </Layout>
