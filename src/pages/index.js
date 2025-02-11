@@ -46,12 +46,12 @@ export default function Home() {
           </div>
           <p>Welcome to My personal website.<span className="wave">👋🏼</span></p>
           <Link href="michaeldiputra-CV.pdf" download target="_blank" className="flex items-center py-3 px-4 mt-3 text-sm font-medium rounded-lg border transition duration-300 text-blue-400 border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 w-fit opacity-0 hover:opacity-100">
-            <Image src="cv.svg" alt="cv" width={1000} height={1000} className="w-5 mr-2 text-blue-400 fill-blue-400"></Image>
+            <Image src="cv.svg" alt="cv" width={1000} height={1000} className="w-5 mr-2 text-blue-400 fill-blue-400" />
             Download CV
           </Link>
         </div>
         <div className="xl:mr-20 w-fit">
-          <Image src="/me.jpg" alt="me" width={1000} height={1000} className="rounded-full border-[6px] border-blue-400 shadow-blue-400 shadow-[0_0_35px_-7px] w-80 md:border-blue-400 md:border-8 md:shadow-blue-400 md:shadow-[0_0_60px_-7px] md:w-96"></Image>
+          <Image priority src="/me.jpg" alt="me" width={1000} height={1000} className="rounded-full border-[6px] border-blue-400 shadow-blue-400 shadow-[0_0_35px_-7px] w-80 md:border-blue-400 md:border-8 md:shadow-blue-400 md:shadow-[0_0_60px_-7px] md:w-96" />
         </div>
       </div>
     </div>

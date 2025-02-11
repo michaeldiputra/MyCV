@@ -31,7 +31,7 @@ export default function Portfolio() {
           {portfolioData.map(item => (
             <div key={item.id} className="p-5 w-full bg-neutral-800/60 rounded-xl border-2 border-neutral-700 flex flex-col justify-between transition-all hover:-translate-y-2">
               <div>
-                <Image src={item.imageUrl} alt={item.title} width={1000} height={1000} className="w-full rounded-xl"></Image>
+                <Image src={item.imageUrl} alt={item.title} width={1000} height={1000} className="w-full rounded-xl" />
                 <div>
                   <h4 className="text-center font-semibold mt-4 text-xl">{item.title}</h4>
                   <p className="text-neutral-400 text-sm mt-3">{item.description}</p>
@@ -43,12 +43,12 @@ export default function Portfolio() {
                   <div className="flex justify-end mt-2 pr-1">
                     {item.githubUrl && (
                       <Link href={item.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Image src="/portfolio/github.svg" alt="github" width={1000} height={1000} className="invert w-5 hover:-translate-y-0 translate-y-0.5 cursor-pointer transition duration-300"></Image>
+                        <Image src="/portfolio/github.svg" alt="github" width={1000} height={1000} className="invert w-5 hover:-translate-y-0 translate-y-0.5 cursor-pointer transition duration-300" />
                       </Link>
                     )}
                     {item.liveUrl && (
                       <Link href={item.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <Image src="/portfolio/out.png" alt="view page" width={1000} height={1000} className="invert w-5 hover:-translate-y-0.5 cursor-pointer transition duration-300 ml-2"></Image>
+                        <Image src="/portfolio/out.png" alt="view page" width={1000} height={1000} className="invert w-5 hover:-translate-y-0.5 cursor-pointer transition duration-300 ml-2" />
                       </Link>
                     )}
                   </div>
