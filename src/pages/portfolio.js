@@ -28,10 +28,10 @@ export default function Portfolio() {
           <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-500 w-fit">Explore the projects I&apos;ve worked on so far</p>
         </div>
         <div className="grid gap-7 pb-32 mt-11 w-fit grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {portfolioData.map(item => (
+          {portfolioData.map((item, index) => (
             <div key={item.id} className="p-5 w-full bg-neutral-800/60 rounded-xl border-2 border-neutral-700 flex flex-col justify-between transition-all hover:-translate-y-2">
               <div>
-                <Image src={item.imageUrl} alt={item.title} width={1000} height={1000} quality={70} priority={index === 0} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-xl" />
+                <Image key={index} src={item.imageUrl} alt={item.title} width={1000} height={1000} quality={70} priority={index === 0} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-xl" />
                 <div>
                   <h4 className="text-center font-semibold mt-4 text-xl">{item.title}</h4>
                   <p className="text-neutral-400 text-sm mt-3">{item.description}</p>
