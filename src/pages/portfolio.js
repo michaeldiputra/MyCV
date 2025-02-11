@@ -31,9 +31,9 @@ export default function Portfolio() {
           {portfolioData.map((item, index) => (
             <div key={item.id} className="p-5 w-full bg-neutral-800/60 rounded-xl border-2 border-neutral-700 flex flex-col justify-between transition-all hover:-translate-y-2">
               <div>
-                <Image key={index} src={item.imageUrl} alt={item.title} width={1000} height={1000} quality={70} priority={index === 0} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-xl" />
+                <Image key={index} src={item.imageUrl} alt={item.title} width={1000} height={1000} quality={70} loading={index < 3 ? "eager" : "lazy"} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-xl" />
                 <div>
-                  <h4 className="text-center font-semibold mt-4 text-xl">{item.title}</h4>
+                  <h3 className="text-center font-semibold mt-4 text-xl">{item.title}</h3>
                   <p className="text-neutral-400 text-sm mt-3">{item.description}</p>
                 </div>
               </div>
