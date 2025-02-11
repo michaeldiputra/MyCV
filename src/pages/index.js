@@ -51,7 +51,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="xl:mr-20 w-fit">
-          <Image priority src="/me.jpg" alt="me" width={1000} height={1000} className="rounded-full border-[6px] border-blue-400 shadow-blue-400 shadow-[0_0_35px_-7px] w-80 md:border-blue-400 md:border-8 md:shadow-blue-400 md:shadow-[0_0_60px_-7px] md:w-96" />
+          <Image priority src="/me.jpg" alt="me" width={1000} height={1000} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-full border-[6px] border-blue-400 shadow-blue-400 shadow-[0_0_35px_-7px] w-80 md:border-blue-400 md:border-8 md:shadow-blue-400 md:shadow-[0_0_60px_-7px] md:w-96" />
         </div>
       </div>
     </div>

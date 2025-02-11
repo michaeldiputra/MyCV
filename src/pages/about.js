@@ -11,6 +11,9 @@ export default function About() {
   return (
     <div>
       <Head>
+        <title>About | michael.ray();</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 1 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites. My skills include HTML, CSS, Bootstrap, JavaScript, PHP, React, and Laravel. I also use tools like Git, Figma, and Vercel to enhance development. Let's build something amazing together!" />
         <meta property="og:title" content="About | michael.ray();" />
         <meta property="og:description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 1 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites." />
@@ -30,7 +33,7 @@ export default function About() {
           </div>
           <div className="flex mt-6 justify-between md:flex-row flex-col items-center">
             <div>
-              <Image src="/me.jpg" alt="me" width={1000} height={1000} className="rounded-full lg:w-80 w-60 mx-3 md:mx-11 md:w-72 xl:w-96" />
+              <Image src="/me.jpg" alt="me" width={1000} height={1000} sizes="(max-width: 768px) 32px, (max-width: 1024px) 40px, 50px" className="rounded-full lg:w-80 w-60 mx-3 md:mx-11 md:w-72 xl:w-96" />
             </div>
             <div className="text-sm flex justify-evenly flex-col text-justify md:pl-3 md:w-7/12 w-full lg:text-lg lg:font-light ">
               <p className="md:pt-2 pt-10 indent-8">Hi everyone! My name is Michael Ray Diputra. I&apos;m a web developer from Badung, Bali. I have 1 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
@@ -84,7 +87,7 @@ export default function About() {
               <div className="grid pb-32 grid-cols-1 gap-5 md:gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
                 {techstackData.map(techstack => (
                   <div key={techstack.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
-                    <Image src={techstack.imageUrl} alt={techstack.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10" />
+                    <Image src={techstack.imageUrl} alt={techstack.title} width={1000} height={1000} sizes="(max-width: 768px) 32px, (max-width: 1024px) 40px, 50px" className="group-hover:scale-125 transition w-8 md:w-10" />
                     <div className="pl-5 text-left overflow-hidden">
                       <h3 className="font-medium translate-y-2 group-hover:translate-y-0 transition text-base md:text-lg">{techstack.title}</h3>
                       <p className="text-left text-blue-400 opacity-0 transition w-full text-xs truncate group-hover:opacity-100 md:text-sm">{techstack.level}</p>
@@ -97,7 +100,7 @@ export default function About() {
               <div className="grid pb-32 grid-cols-1 gap-5 md:gap-10 sm:grid-cols-2 lg:gap-10 md:grid-cols-3 xl:grid-cols-4">
                 {toolsData.map(tools => (
                   <div key={tools.id} className="border-[1px] border-blue-400 rounded items-center flex group hover:bg-blue-400/10 transition w-full py-3 px-4 md:h-20 md:p-5 xl:w-64">
-                    <Image src={tools.imageUrl} alt={tools.title} width={1000} height={1000} className="group-hover:scale-125 transition w-8 md:w-10" />
+                    <Image src={tools.imageUrl} alt={tools.title} width={1000} height={1000} sizes="(max-width: 768px) 32px, (max-width: 1024px) 40px, 50px" className="group-hover:scale-125 transition w-8 md:w-10" />
                     <div className="pl-5 text-left overflow-hidden">
                       <h3 className="font-medium translate-y-2 group-hover:translate-y-0 transition text-base md:text-lg">{tools.title}</h3>
                       <p className="text-left text-blue-400 opacity-0 transition w-full text-xs truncate group-hover:opacity-100 md:text-sm">{tools.for}</p>
