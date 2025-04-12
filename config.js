@@ -22,7 +22,7 @@ export const toolsData = [
   { id: 2, imageUrl: '/about/tools/github.svg', title: 'GitHub', for: 'Git Hosting' },
   { id: 5, imageUrl: '/about/tools/figma.png', title: 'Figma', for: 'Prototyping Design' },
   { id: 6, imageUrl: '/about/tools/vercel.svg', title: 'Vercel', for: 'Hosting' },
-  { id: 11, imageUrl: '/about/tools/Laragon.svg', title: 'Laragon', for: 'Env development' },
+  { id: 11, imageUrl: '/about/tools/laragon.svg', title: 'Laragon', for: 'Env development' },
   { id: 1, imageUrl: '/about/tools/git.png', title: 'Git', for: 'Source Control' },
   { id: 3, imageUrl: '/about/tools/npm.svg', title: 'NPM', for: 'Package Manager' },
   { id: 4, imageUrl: '/about/tools/mysql.png', title: 'MySQL', for: 'Database' },
