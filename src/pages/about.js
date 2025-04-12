@@ -14,15 +14,15 @@ export default function About() {
         <title>About | michael.ray();</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 1 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites. My skills include HTML, CSS, Bootstrap, JavaScript, PHP, React, and Laravel. I also use tools like Git, Figma, and Vercel to enhance development. Let's build something amazing together!" />
+        <meta name="description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 3 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites. My skills include HTML, CSS, Bootstrap, JavaScript, PHP, React, and Laravel. I also use tools like Git, Figma, and Vercel to enhance development. Let's build something amazing together!" />
         <meta property="og:title" content="About | michael.ray();" />
-        <meta property="og:description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 1 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites." />
+        <meta property="og:description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 3 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites." />
         <meta property="og:image" content={`${baseUrl}/about-preview.jpg`} />
         <meta property="og:url" content={`${baseUrl}/about`} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About | michael.ray();" />
-        <meta name="twitter:description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 1 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites." />
+        <meta name="twitter:description" content="Hi, I'm Michael Ray Diputra, a web developer from Badung, Bali. With 3 year of experience in web design, I specialize in creating functional, user-friendly, and visually appealing websites." />
         <meta name="twitter:image" content={`${baseUrl}/about-preview.jpg`} />
       </Head>
       <div>
@@ -36,7 +36,7 @@ export default function About() {
               <Image src="/me.jpg" alt="me" width={1000} height={1000} sizes="(max-width: 768px) 32px, (max-width: 1024px) 40px, 50px" className="rounded-full lg:w-80 w-60 mx-3 md:mx-11 md:w-72 xl:w-96" />
             </div>
             <div className="text-sm flex justify-evenly flex-col text-justify md:pl-3 md:w-7/12 w-full lg:text-lg lg:font-light ">
-              <p className="md:pt-2 pt-10 indent-8">Hi everyone! My name is Michael Ray Diputra. I&apos;m a web developer from Badung, Bali. I have 1 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
+              <p className="md:pt-2 pt-10 indent-8">Hi everyone! My name is Michael Ray Diputra. I&apos;m a web developer from Badung, Bali. I have 3 year experience in the field of web designer. I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that has aesthetic value</p>
               <p className="lg:pb-12 md:pt-7 pt-3 indent-8">My job is to build your website to be functional and user-friendly yet still attractive. In addition, I provide a personal touch to your product and ensure that the website catches attention and is easy to use. My goal is to convey your message and identity in the most creative way. If you are interested in hiring me, please contact the listed contact.</p>
             </div>
           </div>
