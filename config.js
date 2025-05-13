@@ -96,5 +96,14 @@ export const portfolioData = [
     githubUrl: 'https://github.com/michaeldiputra/AdminLTE',
     liveUrl: ''
   },
+  {
+    id: 8,
+    imageUrl: '/portfolio/ukk.png',
+    title: 'UKK Kasir',
+    description: "Laravel Filament-based POS system for UKK exam: auto-stock updates, real-time reports, and role-based access.",
+    tech: 'PHP, Laravel, Filament',
+    githubUrl: 'https://github.com/michaeldiputra/UKK',
+    liveUrl: 'https://michael-ukk.laravel.cloud'
+  },
 ];
 portfolioData.sort((a, b) => b.id - a.id);
